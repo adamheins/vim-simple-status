@@ -12,14 +12,14 @@ let g:last_mode=""
 
 " ================================= Colors =================================== "
 
-" Green
+" Purple
 if !exists('g:StatusLine_color_normal')
-  let g:StatusLine_color_normal = 'ctermfg=10 ctermbg=234'
+  let g:StatusLine_color_normal = 'ctermfg=139 ctermbg=234'
 endif
 
-" Red
+" Yellow
 if !exists('g:StatusLine_color_insert')
-  let g:StatusLine_color_insert = 'ctermfg=9 ctermbg=234'
+  let g:StatusLine_color_insert = 'ctermfg=11 ctermbg=234'
 endif
 
 " Blue
