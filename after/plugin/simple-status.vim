@@ -81,13 +81,10 @@ if has('statusline')
 
     function! SetStatusLineStyle()
         " Current format:
-        " (BUFFER) | FILE* ... [RO] PROGRESS% | COLUMN
-
-        " Call Mode() to change color
-        let &stl = "%{Mode()} "
+        " BUFFER | FILE* ... [RO] PROGRESS% | COLUMN
 
         " Buffer number
-        let &stl .= "%1*(%n) %2*|%0* "
+        let &stl = "%0* %n %2*|%0* "
 
         " File path
         " Truncate left side if too long
